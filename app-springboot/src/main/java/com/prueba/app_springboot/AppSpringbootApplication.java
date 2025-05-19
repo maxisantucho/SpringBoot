@@ -11,10 +11,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.util.List;
 
 @SpringBootApplication
-public class AppSpringbootApplication  implements CommandLineRunner {
-
-	@Autowired
-	private PersonaService personaService;
+public class AppSpringbootApplication {
+// implements CommandLineRunner
+	/*@Autowired
+	private PersonaService personaService;*/
 
 	public static void main(String[] args) {
 
@@ -22,7 +22,7 @@ public class AppSpringbootApplication  implements CommandLineRunner {
 
 	}
 
-	@Override
+	/*@Override
 	public void run(String... args) throws Exception {
 
 		personaService.crearPersona(new Persona(5L, "Jose", 17));
@@ -35,5 +35,5 @@ public class AppSpringbootApplication  implements CommandLineRunner {
 		List<Persona> personas = personaService.obtenerTodas();
 		personas.forEach(p -> System.out.println("Nombre : " + p.getNombre()));
 
-	}
+	}*/
 }
